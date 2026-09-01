@@ -2,10 +2,10 @@
   "name": "lab3",
   "version": "1.0.0",
   "description": "HTTP - HYPER TEXT TRANSFER PROTOCOL\r HTML - HYPER TEXT MARKUP LANGUAGE\r CSS - CASCADE STYLE SHEET",
-  "main": "prg9.js",
+  "main": "prg10.js",
   "scripts": {
-    "start": "node prg9.js",
-    "dev": "nodemon prg9.js"
+    "start": "node prg10.js",
+    "dev": "nodemon prg10.js"
   },
   "keywords": [],
   "author": "",
