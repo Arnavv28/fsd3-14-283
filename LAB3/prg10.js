@@ -13,7 +13,8 @@ const server = http.createServer((req,res)=>{
         });
         stream.pipe(res);
 
-    else {
+    }
+    else{
         res.statusCode =404;
         res.end("not found");
     }
