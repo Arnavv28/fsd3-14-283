@@ -4,8 +4,8 @@
   "description": "HTTP - HYPER TEXT TRANSFER PROTOCOL\r HTML - HYPER TEXT MARKUP LANGUAGE\r CSS - CASCADE STYLE SHEET",
   "main": "prg11.js",
   "scripts": {
-    "start": "node prg11.js",
-    "dev": "nodemon prg11.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
