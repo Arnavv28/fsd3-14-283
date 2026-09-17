@@ -1,0 +1,325 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — AERO</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f7f7f8;
+      color: #111;
+    }
+
+    nav {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 8%;
+      background: white;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 800;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #4b43d6;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px 80px;
+      background: white;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 8px 14px;
+      background: #e8e8ff;
+      color: #4b43d6;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(45px, 6vw, 70px);
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #666;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .story {
+      padding: 90px 10%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .story h2 {
+      font-size: 42px;
+      margin-bottom: 25px;
+    }
+
+    .story p {
+      color: #666;
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+
+    .visual {
+      min-height: 380px;
+      border-radius: 30px;
+      background: linear-gradient(135deg, #ddd, #fff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 130px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.1);
+    }
+
+    .values {
+      padding: 90px 10%;
+      background: white;
+      text-align: center;
+    }
+
+    .values h2 {
+      font-size: 42px;
+      margin-bottom: 50px;
+    }
+
+    .value-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .value {
+      padding: 35px 25px;
+      background: #fafafa;
+      border: 1px solid #eee;
+      border-radius: 18px;
+    }
+
+    .value-icon {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .value h3 {
+      margin-bottom: 12px;
+    }
+
+    .value p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .cta {
+      padding: 90px 20px;
+      text-align: center;
+      background: #111;
+      color: white;
+    }
+
+    .cta h2 {
+      font-size: 44px;
+      margin-bottom: 18px;
+    }
+
+    .cta p {
+      color: #bbb;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 28px;
+      background: white;
+      color: #111;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    footer {
+      padding: 30px;
+      text-align: center;
+      background: #111;
+      color: #777;
+      border-top: 1px solid #333;
+    }
+
+    @media (max-width: 800px) {
+      nav ul {
+        display: none;
+      }
+
+      .story {
+        grid-template-columns: 1fr;
+      }
+
+      .value-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .visual {
+        min-height: 280px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">AERO</div>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="inquiry.html">Inquiry</a></li>
+    </ul>
+  </nav>
+
+
+  <section class="hero">
+    <span class="tag">ABOUT AERO</span>
+
+    <h1>Sound.<br>Reimagined.</h1>
+
+    <p>
+      We believe technology should feel effortless.
+      AERO creates beautifully designed audio products
+      that combine powerful performance with everyday comfort.
+    </p>
+  </section>
+
+
+  <section class="story">
+
+    <div>
+      <h2>Our Story</h2>
+
+      <p>
+        AERO started with a simple idea: premium audio shouldn't
+        require complicated technology or uncomfortable hardware.
+      </p>
+
+      <p>
+        Our team brings together designers, engineers, and
+        audio enthusiasts to create products that fit naturally
+        into modern life.
+      </p>
+
+      <p>
+        From the first sketch to the final product, we focus on
+        thoughtful design, reliable performance, and an experience
+        that simply works.
+      </p>
+    </div>
+
+    <div class="visual">
+      🎧
+    </div>
+
+  </section>
+
+
+  <section class="values">
+
+    <h2>What We Believe</h2>
+
+    <div class="value-grid">
+
+      <div class="value">
+        <div class="value-icon">✨</div>
+        <h3>Simple Design</h3>
+        <p>
+          We remove unnecessary complexity and focus
+          on what makes a product genuinely useful.
+        </p>
+      </div>
+
+      <div class="value">
+        <div class="value-icon">🎵</div>
+        <h3>Great Sound</h3>
+        <p>
+          Every product is designed around an immersive
+          and enjoyable listening experience.
+        </p>
+      </div>
+
+      <div class="value">
+        <div class="value-icon">🌱</div>
+        <h3>Think Forward</h3>
+        <p>
+          We continuously explore better materials,
+          technology, and ways to build responsibly.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="cta">
+
+    <h2>Have a question?</h2>
+
+    <p>
+      We'd love to hear from you.
+    </p>
+
+    <a class="btn" href="inquiry.html">
+      Contact AERO →
+    </a>
+
+  </section>
+
+
+  <footer>
+    © 2026 AERO. All rights reserved.
+  </footer>
+
+</body>
+</html>
+```
