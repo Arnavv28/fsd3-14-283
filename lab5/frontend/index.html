@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AERO — Premium Wireless Earbuds</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f6f6f8;
+      color: #111;
+    }
+
+    /* NAVBAR */
+    nav {
+      height: 72px;
+      padding: 0 8%;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #5046d8;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 680px;
+      padding: 80px 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 60px;
+      background: #fff;
+    }
+
+    .hero-content {
+      max-width: 570px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e9e8ff;
+      color: #5046d8;
+      padding: 9px 15px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: .5px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 7vw, 82px);
+      line-height: .95;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+      color: #5046d8;
+    }
+
+    .hero p {
+      color: #666;
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+
+    .price {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 16px 30px;
+      background: #111;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: .2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      background: #333;
+    }
+
+    /* PRODUCT */
+    .product-area {
+      width: 450px;
+      height: 450px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #dedee3, #fff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 35px 80px rgba(0,0,0,.14);
+    }
+
+    .earbuds {
+      font-size: 160px;
+      filter: drop-shadow(0 15px 15px rgba(0,0,0,.15));
+    }
+
+    /* FEATURES */
+    .features {
+      padding: 90px 10%;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .section-subtitle {
+      color: #777;
+      margin-bottom: 50px;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .feature {
+      padding: 35px 25px;
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 18px;
+    }
+
+    .feature-icon {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .feature h3 {
+      margin-bottom: 12px;
+    }
+
+    .feature p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* CTA */
+    .cta {
+      padding: 100px 20px;
+      text-align: center;
+      background: #111;
+      color: #fff;
+    }
+
+    .cta h2 {
+      font-size: 46px;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      color: #aaa;
+      margin-bottom: 30px;
+    }
+
+    .cta .btn {
+      background: #fff;
+      color: #111;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: #777;
+      text-align: center;
+      padding: 28px;
+      border-top: 1px solid #333;
+    }
+
+    /* MOBILE */
+    @media(max-width: 850px) {
+      nav ul {
+        gap: 15px;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .product-area {
+        width: 320px;
+        height: 320px;
+      }
+
+      .earbuds {
+        font-size: 110px;
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media(max-width: 550px) {
+      nav {
+        padding: 0 5%;
+      }
+
+      nav ul {
+        display: none;
+      }
+
+      .hero {
+        padding: 60px 7%;
+      }
+
+      .product-area {
+        width: 270px;
+        height: 270px;
+      }
+
+      .section-title {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">AERO</div>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="enquiry.html">Enquiry</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <span class="tag">NEW GENERATION AUDIO</span>
+
+      <h1>
+        Hear<br>
+        <span>Everything.</span>
+      </h1>
+
+      <p>
+        Meet AeroPods Pro — premium wireless earbuds
+        engineered for immersive sound, powerful noise
+        cancellation and effortless everyday listening.
+      </p>
+
+      <div class="price">₹9,999</div>
+
+      <a href="enquiry.html" class="btn">
+        Enquire Now →
+      </a>
+
+    </div>
+
+    <div class="product-area">
+      <div class="earbuds">🎧</div>
+    </div>
+
+  </section>
+
+  <section class="features">
+
+    <h2 class="section-title">Made to move with you.</h2>
+
+    <p class="section-subtitle">
+      Technology that fits naturally into your everyday life.
+    </p>
+
+    <div class="feature-grid">
+
+      <div class="feature">
+        <div class="feature-icon">🔇</div>
+        <h3>Adaptive ANC</h3>
+        <p>
+          Reduce unwanted background noise and focus
+          on the sounds that matter.
+        </p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">🔋</div>
+        <h3>30-Hour Battery</h3>
+        <p>
+          Listen throughout your day with long-lasting
+          battery performance.
+        </p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">💧</div>
+        <h3>IPX4 Protection</h3>
+        <p>
+          Ready for workouts, commutes and everyday
+          adventures.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="cta">
+
+    <h2>Experience AERO.</h2>
+
+    <p>
+      Have questions about AeroPods Pro?
+      Our team is ready to help.
+    </p>
+
+    <a href="enquiry.html" class="btn">
+      Contact Us →
+    </a>
+
+  </section>
+
+  <footer>
+    © 2026 AERO. All rights reserved.
+  </footer>
+
+</body>
+</html>
+
