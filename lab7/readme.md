@@ -16,3 +16,7 @@
     d. select variant as javascript from arrow keys
     e. select esList for linting from arrow key
     f. select install and start the frontend.
+
+1. simple JS functions return HTML directly.
+2. it must starts with capital letter.
+3. it should be treated as html tag , it must be closed.
