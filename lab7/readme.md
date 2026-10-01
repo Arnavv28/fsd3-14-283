@@ -20,3 +20,6 @@
 1. simple JS functions return HTML directly.
 2. it must starts with capital letter.
 3. it should be treated as html tag , it must be closed.
+
+
+#object 
